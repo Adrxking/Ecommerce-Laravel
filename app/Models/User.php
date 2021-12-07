@@ -55,7 +55,7 @@ class User extends Authenticatable
         'password',
     ]; // Para que en el return no lo devuelva
 
-    public function scopeAmbassadors($query) // Esto sirve para que en el AmbassadorController podemos poner ambassadors
+    public function scopeAmbassadors($query) // Esto sirve para que en el AmbassadorController podamos poner ambassadors
     {
         return $query->where('is_admin', 0);
     }
